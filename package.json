@@ -13,6 +13,8 @@
   "author": "Simon Ihmig",
   "license": "MIT",
   "devDependencies": {
-    "gulp-install": "^0.6.0"
+    "gulp-install": "^0.6.0",
+    "gulp-shell": "^0.5.2",
+    "mkdirp": "^0.5.1"
   }
 }
