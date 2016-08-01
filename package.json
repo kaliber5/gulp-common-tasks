@@ -1,0 +1,18 @@
+{
+  "name": "gulp-common-tasks",
+  "version": "1.0.0",
+  "description": "Common reusable gulp tasks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://simon@bitbucket.kaliber5.de/scm/k5i/gulp-common-tasks.git"
+  },
+  "author": "Simon Ihmig",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-install": "^0.6.0"
+  }
+}
