@@ -1,1 +1,1 @@
-module.exports = require('../js/npm.bower-install');
+module.exports = require('../js/npm-bower-install');
