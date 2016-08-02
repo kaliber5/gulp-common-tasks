@@ -14,10 +14,20 @@
   "license": "MIT",
   "dependencies": {
     "del": "^2.2.1",
+    "gulp-behat": "^0.4.2",
+    "gulp-composer": "^0.4.0",
     "gulp-install": "^0.6.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-phpcs": "^1.1.1",
+    "gulp-phplint": "^0.1.0",
+    "gulp-phpspec": "^0.5.4",
+    "gulp-phpunit": "^0.16.0",
     "gulp-rename": "^1.2.2",
     "gulp-shell": "^0.5.2",
+    "gulp-util": "^3.0.7",
+    "junitwriter": "^0.3.1",
     "mkdirp": "^0.5.1",
-    "run-sequence": "^1.2.2"
+    "run-sequence": "^1.2.2",
+    "through": "^2.3.8"
   }
 }
