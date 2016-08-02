@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://simon@bitbucket.kaliber5.de/scm/k5i/gulp-common-tasks.git"
+    "url": "https://bitbucket.kaliber5.de/scm/k5i/gulp-common-tasks.git"
   },
   "author": "Simon Ihmig",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "del": "^2.2.1",
     "gulp-install": "^0.6.0",
     "gulp-rename": "^1.2.2",
