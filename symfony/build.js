@@ -1,13 +1,11 @@
 function symfonyBuild(gulp) {
-  return function(cb) {
+  return function() {
     var del = require('del');
-    var gutil = require('gulp-util');
 
     del.sync('dist');
 
-    return gulp.src(['app/**/*', 'src/**/*', 'vendor/**/*', 'web/*'], { base: './', dot: true })
-      .pipe(gulp.dest('dist'))
-      .on('error', gutil.log)
+    return gulp.src(['app/**/*', 'src/**/*', 'vendor/**/*', 'web/*'], { base: process.cwd(), dot: true })
+      .pipe(gulp.dest('dist'));
   }
 }
 
