@@ -1,5 +1,3 @@
-var getPathPrefix = require('./_get-path-prefix'); 
-
 function testPhpLint(gulp) {
   return function() {
     var phplint = require('gulp-phplint');
@@ -23,7 +21,7 @@ function testPhpLint(gulp) {
         }
       }))
       .on('end', function() {
-        junitwriter.save(path.join(process.cwd(), '.' + getPathPrefix() + '/build/phplint.xml'));
+        junitwriter.save(path.resolve('/build/phplint.xml'));
       })
       ;
   }

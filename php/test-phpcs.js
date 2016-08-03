@@ -1,5 +1,3 @@
-var getPathPrefix = require('./_get-path-prefix');
-
 function testPhpCs(gulp, options) {
   return function() {
     var phpcs = require('gulp-phpcs');
@@ -13,8 +11,8 @@ function testPhpCs(gulp, options) {
     }
 
     var phpcsOptions = {
-      bin: path.join(process.cwd(), 'bin/phpcs'),
-      standard: path.join(process.cwd(), options.standard),
+      bin: 'bin/phpcs',
+      standard: options.standard,
       warningServerity: 0
     };
     var Writer = require('junitwriter'),
@@ -34,8 +32,8 @@ function testPhpCs(gulp, options) {
         callback();
       }))
       .on('error', gutil.log)
-      .on('end', function(input) {
-        junitwriter.save(path.join(process.cwd(), '.'+getPathPrefix(process)+'/build/phpcs.xml'));
+      .on('end', function() {
+        junitwriter.save(path.resolve('build/phpcs.xml'));
       });
   }
 }
