@@ -1,6 +1,6 @@
 {
   "name": "gulp-common-tasks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Common reusable gulp tasks",
   "main": "index.js",
   "scripts": {
