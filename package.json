@@ -1,6 +1,6 @@
 {
   "name": "gulp-common-tasks",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Common reusable gulp tasks",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,7 @@
   "author": "Simon Ihmig",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^1.1.3",
     "del": "^2.2.1",
     "gulp-behat": "^0.4.2",
     "gulp-composer": "^0.4.0",
@@ -25,6 +26,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-shell": "^0.5.2",
     "gulp-util": "^3.0.7",
+    "gulp-yarn": "0.0.3",
+    "hasbin": "^1.2.3",
     "junitwriter": "^0.3.1",
     "mkdirp": "^0.5.1",
     "run-sequence": "^1.2.2",
