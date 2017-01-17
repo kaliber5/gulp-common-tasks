@@ -15,7 +15,7 @@
   "dependencies": {
     "chalk": "^1.1.3",
     "del": "^2.2.1",
-    "gulp-behat": "andreasschacht/gulp-behat#c7bf09305bef60e78a1c7a68098dc2674516ca7f",
+    "gulp-behat": "github:andreasschacht/gulp-behat#c7bf09305bef60e78a1c7a68098dc2674516ca7f",
     "gulp-composer": "^0.4.0",
     "gulp-install": "^0.6.0",
     "gulp-jshint": "^2.0.1",
