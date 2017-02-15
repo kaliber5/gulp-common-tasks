@@ -17,6 +17,7 @@ function emberTestAll(gulp, options) {
         }
         if (err.code === 1) {
           console.error('Running ember test finished with failed tests!');
+          console.log(stdout);
           // still return exit code of 0 to continue task processing in CI server
           cb();
           return;
