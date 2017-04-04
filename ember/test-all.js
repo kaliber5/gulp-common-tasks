@@ -5,7 +5,7 @@ function emberTestAll(gulp, options) {
       path = require('path'),
       outFile = path.join(process.cwd(), 'build/test-all.xml');
 
-    exec('ember test --silent --reporter xunit', { maxBuffer: 1024 * 1024 }, function(err, stdout) {
+    exec('ember test --silent --reporter xunit --test-port 0', { maxBuffer: 1024 * 1024 }, function(err, stdout) {
       fs.writeFile(outFile, stdout, function(fileErr) {
         if (fileErr) {
           cb(fileErr);
