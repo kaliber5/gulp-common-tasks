@@ -3,7 +3,8 @@ function emberTestAll(gulp, options) {
     var exec = require('child_process').exec,
       fs = require('fs'),
       path = require('path'),
-      outFile = path.join(process.cwd(), 'build/test-all.xml');
+      outFile = path.join(process.cwd(), 'build/test-all.xml'),
+      scriptErrorFile = path.join(process.cwd(), 'build/test-all-script.xml');
 
     exec('ember test --silent --reporter xunit --test-port 0', { maxBuffer: 1024 * 1024 }, function(err, stdout) {
       fs.writeFile(outFile, stdout, function(fileErr) {
@@ -19,8 +20,9 @@ function emberTestAll(gulp, options) {
           console.error('Running ember test finished with failed tests!');
           console.log(stdout);
           // still return exit code of 0 to continue task processing in CI server
-          cb();
-          return;
+
+          //BUT save an error in an junit file
+          return errorWriter('ember', 'ember-tests', 'unknown', 'Running ember test failed!', 'script-error', scriptErrorFile, cb);
         }
         cb(err);
       });
