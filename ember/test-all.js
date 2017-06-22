@@ -1,3 +1,5 @@
+var errorWriter = require('../js/error-writer');
+
 function emberTestAll(gulp, options) {
   return function(cb) {
     var exec = require('child_process').exec,
