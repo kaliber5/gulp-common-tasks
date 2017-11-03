@@ -4,7 +4,7 @@ function symfonyBuild(gulp) {
 
     del.sync('dist');
 
-    return gulp.src(['app/**/*', 'src/**/*', 'vendor/**/*', 'web/*'], { base: process.cwd(), dot: true })
+    return gulp.src(['app/**/*', 'src/**/*', 'vendor/**/*', 'web/*', 'bin/*'], { base: process.cwd(), dot: true })
       .pipe(gulp.dest('dist'));
   }
 }
